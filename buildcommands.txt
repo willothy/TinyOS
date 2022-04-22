@@ -1,0 +1,5 @@
+build:
+	docker build buildenv -t myos-buildenv
+
+run: 
+	docker run --rm -it -v "$(pwd)":/root/env myos-buildenv
